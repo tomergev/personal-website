@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe927caf.css",
+    "main.js": "/static/js/main.94b4f488.js",
+    "static/js/787.4b24f717.chunk.js": "/static/js/787.4b24f717.chunk.js",
+    "static/media/resume.pdf": "/static/media/resume.1272832091e01e069051.pdf",
+    "static/media/tomergev.jpg": "/static/media/tomergev.02281212d0409f464abf.jpg",
+    "index.html": "/index.html",
+    "main.fe927caf.css.map": "/static/css/main.fe927caf.css.map",
+    "main.94b4f488.js.map": "/static/js/main.94b4f488.js.map",
+    "787.4b24f717.chunk.js.map": "/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe927caf.css",
+    "static/js/main.94b4f488.js"
+  ]
+}

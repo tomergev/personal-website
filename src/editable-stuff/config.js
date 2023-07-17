@@ -55,7 +55,7 @@ const about = {
   imageSize: 375,
   message:
     "As a Full Stack JavaScript Developer, I excel in Vue expertise on the frontend, coupled with a solid understanding of Node on the backend. My technical strengths encompass a wide range of cutting-edge technologies, including JavaScript, Node, Vue, MongoDB, React, and Express. With expertise in these tools and frameworks, I thrive in delivering robust and scalable solutions that elevate user experiences and drive business success. Continually staying abreast of industry trends, I am passionate about leveraging my versatile skill set to create innovative and impactful web applications. Let's connect and collaborate on shaping the future of software development!",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION

@@ -9,24 +9,24 @@ const mainBody = {
   firstName: "Tomer",
   middleName: "",
   lastName: "Gev",
-  message: "Full Stack Developer",
+  message: "Full Stack Developer | Software Engineer | JavaScript, Node, Vue, React",
   icons: [
-    {
-      image: "fa-github",
-      url: "https://github.com/tomergev",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/tomer.gev/",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/jugglemetimberss/",
-    },
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/tomer-gev-76a57088/",
     },
+    {
+      image: "fa-github",
+      url: "https://github.com/tomergev",
+    },
+    // {
+    //   image: "fa-facebook",
+    //   url: "https://www.facebook.com/tomer.gev/",
+    // },
+    // {
+    //   image: "fa-instagram",
+    //   url: "https://www.instagram.com/jugglemetimberss/",
+    // },
     {
       image: "fa-twitter",
       url: "https://twitter.com/tomergev21",
@@ -107,12 +107,12 @@ const skills = {
     { name: "JavaScript", value: 90 },
     { name: "React", value: 65 },
     { name: "HTML/CSS", value: 80 },
-    { name: "Vue", value: 80 },
+    { name: "Vue", value: 85 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
     { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
+    { name: "Communication", value: 90 },
     { name: "Adaptability", value: 85 },
     { name: "Problem Solving", value: 75 },
     { name: "Empathy", value: 90 },
@@ -130,22 +130,22 @@ const getInTouch = {
   email: "tomergev21@gmail.com",
 };
 
-const experiences = {
-  show: false,
-  heading: "Experiences",
-  data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
-  ]
-}
+// const experiences = {
+//   show: false,
+//   heading: "Experiences",
+//   data: [
+//     {
+//       role: 'Software Engineer',// Here Add Company Name
+//       companylogo: require('../assets/img/dell.png'),
+//       date: 'June 2018 – Present',
+//     },
+//     {
+//       role: 'Front-End Developer',
+//       companylogo: require('../assets/img/boeing.png'),
+//       date: 'May 2017 – May 2018',
+//     },
+//   ]
+// }
 
 // Blog SECTION
 // const blog = {
@@ -160,5 +160,5 @@ export {
   skills, 
   // leadership, 
   getInTouch, 
-  experiences 
+  // experiences 
 };

@@ -29,10 +29,6 @@ const Project = ({ heading, username, length, specfic }) => {
   const fetchRepos = useCallback(async () => {
     let repoList = [];
     try {
-      // getting all repos
-      const response = await axios.get(allReposAPI);
-      // slicing to the length
-      repoList = [...response.data.slice(0, length)];
       // adding specified repos
       try {
         for (let repoName of specfic) {
@@ -41,6 +37,14 @@ const Project = ({ heading, username, length, specfic }) => {
         }
       } catch (error) {
         console.error(error.message);
+      }
+      console.log('repoList', repoList)
+      // getting all repos
+      if (repoList.length === 0) {
+        const response = await axios.get(allReposAPI);
+        console.log(response, allReposAPI)
+        // slicing to the length
+        repoList = [...repoList, ...response.data.slice(0, length)];
       }
       // setting projectArray
       // TODO: remove the duplication.
@@ -55,7 +59,7 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-light m-0">
+    <Jumbotron fluid id="projects" className="m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <Row>

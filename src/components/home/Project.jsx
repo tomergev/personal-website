@@ -38,11 +38,9 @@ const Project = ({ heading, username, length, specfic }) => {
       } catch (error) {
         console.error(error.message);
       }
-      console.log('repoList', repoList)
       // getting all repos
       if (repoList.length === 0) {
         const response = await axios.get(allReposAPI);
-        console.log(response, allReposAPI)
         // slicing to the length
         repoList = [...repoList, ...response.data.slice(0, length)];
       }
